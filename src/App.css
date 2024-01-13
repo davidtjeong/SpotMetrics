@@ -1,4 +1,125 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #A46253;
+}
+
+.App-title {
+  margin-bottom: 10px;
+}
+
+.All-data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+}
+
 .App {
+  text-align: center;
+  border: 2px solid #A46253;
+  padding: 20px;
+  /* Add padding for better spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box shadow */
+}
+
+.Artist-image {
+  height: 10vmin;
+  width: 10vmin;
+  pointer-events: none;
+  border-radius: 50%;
+  margin-bottom: 0px;
+}
+
+.Artist-name {
+  font-size: 10px;
+  font-family:'Courier New', Courier, monospace;
+  margin-bottom: 10px;
+}
+
+.Artist-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
+.App-logo {
+  height: 40vmin;
+  width: 40vmin;
+  pointer-events: none;
+  margin-top: 60px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 0.2s linear;
+    /* Slowed down the animation */
+    aspect-ratio: 1/1;
+  }
+
+  .Artist-image {
+    animation: App-logo-spin infinite 10s linear;
+    aspect-ratio: 1/1;
+  }
+}
+
+.App-button {
+  color: #A46253;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+  border: 2px solid #A46253;
+  background: #99DA2E;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.App-button:hover {
+  background: #7AA329;
+}
+
+.App-header {
+  background: #FFEB81;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(25px + 2vmin);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #A46253;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +156,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
